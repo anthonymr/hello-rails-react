@@ -3,6 +3,6 @@ class RootController < ApplicationController
   end
 
   def welcome
-    render json: Message.all.sample(1)
+    render json: Message.all.sample(1).first
   end
 end
